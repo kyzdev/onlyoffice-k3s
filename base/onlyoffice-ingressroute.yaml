@@ -1,0 +1,16 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: onlyoffice-https
+  namespace: onlyoffice
+spec:
+  entrypoints:
+  - websecure
+  routes:
+  - match: Host(`office.anywhere.com`)
+    kind: Rule
+    services:
+    - name: documentserver
+      port: 80
+    middlewares:
+    - name: onlyoffice-full

@@ -1,0 +1,10 @@
+namespace: onlyoffice
+secretGenerator:
+  - name: secret
+    literals:
+    - secret=cequevousvoulez
+    behavior: replace
+bases:
+- ../../base
+patchesStrategicMerge:
+- onlyoffice-ingressroute.yaml

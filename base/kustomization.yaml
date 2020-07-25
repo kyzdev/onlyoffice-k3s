@@ -1,0 +1,10 @@
+namespace: onlyoffice
+secretGenerator:
+  - name: secret
+  literals:
+  - secret=cequevousvoulez
+resources:
+- onlyoffice-configmap.yaml
+- onlyoffice-deployment.yaml
+- onlyoffice-ingressroute.yaml
+- onlyoffice-middleware.yaml
