@@ -1,4 +1,4 @@
-# wordpress-k3s
+# onlyoffice-k3s
 
 A kubectl YAML to deploy OnlyOffice on Kubernetes
 
